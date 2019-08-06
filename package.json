@@ -1,0 +1,56 @@
+{
+  "name": "feathers",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Jack Whiting",
+    "email": "jack.w@weareframework.co.uk"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^8.0.0",
+    "yarn": ">= 0.18.0"
+  },
+  "scripts": {
+    "test": "yarn run eslint && yarn run mocha",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.3.0-pre.1",
+    "@feathersjs/authentication-local": "^4.3.0-pre.1",
+    "@feathersjs/authentication-oauth": "^4.3.0-pre.1",
+    "@feathersjs/configuration": "^4.3.0-pre.1",
+    "@feathersjs/errors": "^4.3.0-pre.1",
+    "@feathersjs/express": "^4.3.0-pre.1",
+    "@feathersjs/feathers": "^4.3.0-pre.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "feathers-hooks-common": "^4.20.7",
+    "feathers-knex": "^6.0.0",
+    "helmet": "^3.20.0",
+    "knex": "^0.19.1",
+    "pg": "^7.12.0",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "axios": "^0.19.0",
+    "eslint": "^6.1.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1"
+  }
+}
